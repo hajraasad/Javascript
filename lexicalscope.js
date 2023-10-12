@@ -39,13 +39,13 @@ function makeFunc() {
 const myFunc = makeFunc();
 myFunc();//returns the display name function because it remembers that
 
-//timeout will execute last since it is async task 
+//timeout will execute last since it is async task even if the time is 0 
 console.log("num1");
 setTimeout(() => 
 {
  // Do even more stuff
   console.log("num2")
-}, 2000);
+}, 0);
 console.log("num2");
 
 
